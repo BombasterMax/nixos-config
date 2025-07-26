@@ -17,8 +17,8 @@
       autosave = "on_focus_change";
       vim_mode = false;
       theme = "Gruvbox Dark";
-      ui_font_size = lib.mkForce 16;
-      buffer_font_size = lib.mkForce 18;
+      ui_font_size = lib.mkForce 18;
+      buffer_font_size = lib.mkForce 20;
       relative_line_numbers = true;
 
       assistant = {
