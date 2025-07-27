@@ -112,6 +112,10 @@
     '';
   };
 
+  # Logitech stuff
+  hardware.logitech.wireless.enable = true;
+  hardware.logitech.wireless.enableGraphical = true;
+
   programs.fish.enable = true;
   # Install nekoray and openvpn
   programs.nekoray = {
