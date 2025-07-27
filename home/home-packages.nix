@@ -87,6 +87,8 @@ with pkgs;
   # Development
   gh
   devenv
+  dive
+  podman-tui
   clang
   clang-tools
   valgrind
