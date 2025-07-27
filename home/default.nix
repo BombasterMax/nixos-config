@@ -17,6 +17,15 @@
     userName = "Maxim Avramenko";
     userEmail = "BombasterMax@yandex.ru";
   };
+  # gh config
+
+  programs.gh = {
+    enable = true;
+    gitCredentialHelper = {
+      enable = true;
+    };
+  };
+
 
   # Stating version
   home.stateVersion = "25.05";
