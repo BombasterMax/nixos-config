@@ -97,6 +97,12 @@
       defaultNetwork.settings.dns_enabled = true;
     };
   };
+  # Virt Manager
+  programs.virt-manager.enable = true;
+  users.groups.libvirtd.members = [ "bombaster" ];
+  virtualisation.libvirtd.enable = true;
+  virtualisation.spiceUSBRedirection.enable = true;
+
   services.flatpak.enable = true;
   systemd.services.flatpak-repo = {
     wantedBy = [ "multi-user.target" ];
