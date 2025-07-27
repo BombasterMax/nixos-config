@@ -48,6 +48,7 @@ with pkgs;
   nix-output-monitor
 
   # perfomance
+  papers
   foliate
   glow
   gnome-solanum

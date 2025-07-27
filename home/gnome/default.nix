@@ -23,6 +23,17 @@
     ];
   };
 
+  # Default applications
+    xdg.mimeApps = {
+    enable = true;
+    defaultApplications = {
+      "application/pdf" = "org.gnome.Papers.desktop";
+      "image/png" = "org.gnome.Loupe.desktop";
+      "image/jpeg" = "org.gnome.Loupe.desktop";
+      "image/webp" = "org.gnome.Loupe.desktop";
+    };
+  };
+
   dconf.settings = {
     "org/gnome/settings-daemon/plugins/power" = {
       idle-dim = false;
