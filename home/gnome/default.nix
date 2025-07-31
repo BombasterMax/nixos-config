@@ -20,6 +20,9 @@
       {
         package = caffeine;
       }
+      {
+        package = clipboard-history;
+      }
     ];
   };
 
