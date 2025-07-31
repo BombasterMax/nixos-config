@@ -80,6 +80,12 @@ with pkgs;
   ffuf
   dirbuster
   # rev
+    (rizin.withPlugins (
+      ps: with ps; [
+        rz-ghidra
+        sigdb
+      ]
+    ))
   radare2
   binwalk
   ghidra
@@ -87,6 +93,7 @@ with pkgs;
   edb
   # Development
   gh
+  lazygit
   devenv
   dive
   podman-tui
