@@ -74,7 +74,9 @@
       wl-clipboard
       # TODO: move something to home-packages.nix
       telegram-desktop
+      wineWowPackages.stable
       git
+      gcc
       openvpn
       dconf-editor
       onlyoffice-desktopeditors
