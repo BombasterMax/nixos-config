@@ -80,12 +80,12 @@ with pkgs;
   ffuf
   dirbuster
   # rev
-    (rizin.withPlugins (
-      ps: with ps; [
-        rz-ghidra
-        sigdb
-      ]
-    ))
+  (rizin.withPlugins (
+    ps: with ps; [
+      rz-ghidra
+      sigdb
+    ]
+  ))
   radare2
   binwalk
   ghidra
@@ -94,6 +94,8 @@ with pkgs;
   # Development
   gh
   lazygit
+  man-pages
+  man-pages-posix
   devenv
   dive
   podman-tui
@@ -110,10 +112,9 @@ with pkgs;
   gopls
   nixd
   nixfmt-rfc-style
-    (python3.withPackages (
-      ps: with ps; [
-        ipython
-      ]
-    ))
-    pyright
+  (python3.withPackages (
+    ps: with ps; [
+      ipython
+    ]
+  ))
 ]
