@@ -117,4 +117,8 @@ with pkgs;
       ipython
     ]
   ))
+  pyright
+  # university
+  typst
+  tinymist
 ]
