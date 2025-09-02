@@ -1,18 +1,27 @@
 {
   pkgs,
+  pkgsUnstable,
   lib,
   ...
 }:
 {
   programs.zed-editor = {
     enable = true;
+    package = pkgsUnstable.zed-editor;
     extensions = [
       "toml"
       "lua"
       "basher"
+      "typst"
     ];
 
     userSettings = {
+      disable_ai = true;
+      "telemetry" = {
+        "diagnostics" = false;
+        "metrics" = false;
+      };
+
       restore_on_startup = "none";
       autosave = "on_focus_change";
       vim_mode = false;
@@ -49,6 +58,9 @@
             "!..."
           ];
         };
+        Typst = {
+          "language_servers" = [ "tinymist" ];
+        };
 
         Python = {
           "language_servers" = [ "pyright" ];
@@ -56,6 +68,13 @@
       };
 
       lsp = {
+        "tinymist" = {
+          "settings" = {
+            "exportPdf" = "onSave";
+            "outputPath" = "$root/$name";
+          };
+        };
+
         "pyright" = {
           binary = {
             path_lookup = true;
