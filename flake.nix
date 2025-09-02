@@ -9,6 +9,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -28,21 +30,25 @@
       url = "github:yokoffing/Betterfox";
       flake = false;
     };
-
   };
 
   outputs =
     {
       nixpkgs,
+      nixpkgs-unstable,
       home-manager,
       nixvim,
       nur,
       ...
     }@inputs:
+    let
+      system = "x86_64-linux";
+      pkgsUnstable = import nixpkgs-unstable { inherit system; };
+    in
     {
       nixosConfigurations = {
         abbadon = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
+          inherit system;
 
           modules = [
             ./configuration.nix
@@ -59,7 +65,9 @@
                     nixvim.homeManagerModules.nixvim
                     nur.modules.homeManager.default
                   ];
-                  extraSpecialArgs = { inherit inputs; };
+                  extraSpecialArgs = {
+                    inherit inputs pkgsUnstable;
+                  };
 
                   users.bombaster = import ./home;
                 };
