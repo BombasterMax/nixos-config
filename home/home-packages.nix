@@ -16,6 +16,8 @@ with pkgs;
   eza
   fzf
   far2l
+  fd
+  bat
 
   # archives stuff
   zip
