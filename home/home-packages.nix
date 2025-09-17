@@ -100,7 +100,6 @@ with pkgs;
   man-pages-posix
   devenv
   dive
-  podman-tui
   clang
   clang-tools
   valgrind
