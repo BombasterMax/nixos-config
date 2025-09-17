@@ -100,7 +100,6 @@
     dive
     podman-tui
     podman-compose
-    podman-desktop
   ];
   # Virt Manager
   programs.virt-manager.enable = true;

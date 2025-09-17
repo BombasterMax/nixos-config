@@ -119,6 +119,7 @@ with pkgs;
     ]
   ))
   pyright
+  podman-desktop
   # university
   typst
   tinymist
