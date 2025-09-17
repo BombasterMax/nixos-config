@@ -123,4 +123,7 @@ with pkgs;
   # university
   typst
   tinymist
+  # graphics
+  krita
+  gimp3
 ]
