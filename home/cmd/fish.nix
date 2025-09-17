@@ -10,6 +10,8 @@
             starship init fish | source
             alias ls="eza"
             alias lt="eza --tree"
+            alias lla="eza -la"
+            alias lgit="lazygit"
             set -Ux MANPAGER 'nvim +Man!'
             set -gx EDITOR "nvim"
       function y
