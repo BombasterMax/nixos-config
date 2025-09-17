@@ -14,4 +14,9 @@
     run  = 'shell "powershell.exe" --block'
     desc = "Open PowerShell here"
   '';
+  # don't forget to install theme ya pack -a bennyyip/gruvbox-dark
+  home.file.".config/yazi/theme.toml".text = ''
+    [flavor]
+    dark = "gruvbox-dark"
+  '';
 }
