@@ -42,6 +42,47 @@
         working_directory = "current_project_directory";
       };
 
+      # My custom bindings
+      userKeymaps = [
+        {
+          bindings = {
+            "cmd-k cmd-left" = [
+              "workspace::ActivatePaneInDirection"
+              "Left"
+            ];
+            "cmd-k cmd-right" = [
+              "workspace::ActivatePaneInDirection"
+              "Right"
+            ];
+            "cmd-k cmd-up" = [
+              "workspace::ActivatePaneInDirection"
+              "Up"
+            ];
+            "cmd-k cmd-down" = [
+              "workspace::ActivatePaneInDirection"
+              "Down"
+            ];
+            "cmd-k shift-left" = [
+              "workspace::SwapPaneInDirection"
+              "Left"
+            ];
+            "cmd-k shift-right" = [
+              "workspace::SwapPaneInDirection"
+              "Right"
+            ];
+            "cmd-k shift-up" = [
+              "workspace::SwapPaneInDirection"
+              "Up"
+            ];
+            "cmd-k shift-down" = [
+              "workspace::SwapPaneInDirection"
+              "Down"
+            ];
+
+          };
+        }
+      ];
+
       # File syntax highlighting
       file_types = {
         JSON = [
