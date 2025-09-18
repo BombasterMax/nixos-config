@@ -18,6 +18,7 @@ with pkgs;
   far2l
   fd
   bat
+  neovim
 
   # archives stuff
   zip

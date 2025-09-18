@@ -83,7 +83,6 @@
       nerd-fonts.fira-code
       # unfree shit
       obsidian
-      caido
     ];
   };
   # Podman

@@ -5,7 +5,7 @@
   home.homeDirectory = "/home/bombaster";
   imports = [
     ./gnome
-    ./nixvim
+    #./nixvim
     ./cmd
     ./apps
   ];
@@ -25,7 +25,6 @@
       enable = true;
     };
   };
-
 
   # Stating version
   home.stateVersion = "25.05";
