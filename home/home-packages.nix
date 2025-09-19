@@ -19,6 +19,8 @@ with pkgs;
   fd
   bat
   neovim
+  libqalculate
+  qalculate-gtk
 
   # archives stuff
   zip
