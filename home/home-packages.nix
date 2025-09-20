@@ -118,7 +118,6 @@ with pkgs;
   ## forensics
   binwalk
   exiftool
-  volatility3
   foremost
   autopsy
   imhex

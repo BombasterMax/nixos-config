@@ -83,6 +83,7 @@
       nerd-fonts.fira-code
       # unfree shit
       obsidian
+      volatility3
     ];
   };
   # Podman
