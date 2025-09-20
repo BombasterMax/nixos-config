@@ -5,7 +5,7 @@ with pkgs;
   # For installing flatpaks
   gnome-software
 
-  # core packages for my workflow
+  # programms i use to operate my PC
   ptyxis
   zellij
   yazi
@@ -21,6 +21,27 @@ with pkgs;
   neovim
   libqalculate
   qalculate-gtk
+  file
+  which
+  tree
+  gnused
+  gnutar
+  gawk
+  zstd
+  gnupg
+
+  # applications for daily use
+  papers
+  foliate
+  gnome-solanum
+
+  # university
+  typst
+  tinymist
+
+  # graphics
+  krita
+  gimp3
 
   # archives stuff
   zip
@@ -37,26 +58,15 @@ with pkgs;
   socat
   ipcalc
 
-  # weird stuff
+  # ricing
+  glow
   nerdfetch
   cowsay
-  file
-  which
-  tree
-  gnused
-  gnutar
-  gawk
-  zstd
-  gnupg
 
   # nix stuff
   nix-output-monitor
 
   # perfomance
-  papers
-  foliate
-  glow
-  gnome-solanum
   btop
   iotop
   iftop
@@ -81,15 +91,18 @@ with pkgs;
   netexec
   nmap
   zenmap
+
   ## web
   zap
   ffuf
   dirbuster
   sqlmap
+
   ## networking
   wireshark
   netcat
   tcpdump
+
   ## rev
   (rizin.withPlugins (
     ps: with ps; [
@@ -101,6 +114,7 @@ with pkgs;
   ghidra
   cutter
   edb
+
   ## forensics
   binwalk
   exiftool
@@ -108,47 +122,60 @@ with pkgs;
   foremost
   autopsy
   imhex
+
   ## crypto
   hashcat
   hash-identifier
   johnny
   cyberchef
+
   # Development
+  ## vcs stuff
   gh
   lazygit
+
+  ## man pages in case i am stupid
   man-pages
   man-pages-posix
+  ## devenv becaues it's cool
   devenv
+
+  ## container stuff
   dive
+  podman-desktop
+
+  ## C
   clang
   clang-tools
   valgrind
   cmake
   gnumake
+
+  ## Rust
   cargo
   rustc
   rustfmt
   rust-analyzer
+
+  ## Golang
   go
   gopls
+
+  ## Nix
   nixd
   nixfmt-rfc-style
+
+  ## Python
   (python3.withPackages (
     ps: with ps; [
       ipython
     ]
   ))
   pyright
-  podman-desktop
+
   # appsec
   shellcheck
   trivy
   clair
   grype
-  # university
-  typst
-  tinymist
-  # graphics
-  krita
-  gimp3
 ]
