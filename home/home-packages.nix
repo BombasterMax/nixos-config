@@ -77,14 +77,20 @@ with pkgs;
   addwater
 
   # Cybersecurity
-  # infra
+  ## infra
+  netexec
   nmap
   zenmap
-  # web
+  ## web
   zap
   ffuf
   dirbuster
-  # rev
+  sqlmap
+  ## networking
+  wireshark
+  netcat
+  tcpdump
+  ## rev
   (rizin.withPlugins (
     ps: with ps; [
       rz-ghidra
@@ -92,10 +98,21 @@ with pkgs;
     ]
   ))
   radare2
-  binwalk
   ghidra
   cutter
   edb
+  ## forensics
+  binwalk
+  exiftool
+  volatility3
+  foremost
+  autopsy
+  imhex
+  ## crypto
+  hashcat
+  hash-identifier
+  johnny
+  cyberchef
   # Development
   gh
   lazygit
@@ -123,6 +140,11 @@ with pkgs;
   ))
   pyright
   podman-desktop
+  # appsec
+  shellcheck
+  trivy
+  clair
+  grype
   # university
   typst
   tinymist
