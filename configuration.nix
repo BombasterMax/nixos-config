@@ -101,11 +101,9 @@
     podman-tui
     podman-compose
   ];
-  # Virt Manager
-  programs.virt-manager.enable = true;
-  users.groups.libvirtd.members = [ "bombaster" ];
-  virtualisation.libvirtd.enable = true;
-  virtualisation.spiceUSBRedirection.enable = true;
+
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "bombaster" ];
 
   services.flatpak.enable = true;
   systemd.services.flatpak-repo = {
