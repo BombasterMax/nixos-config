@@ -84,6 +84,7 @@
       # unfree shit
       obsidian
       volatility3
+      steam-run
     ];
   };
   # Podman
