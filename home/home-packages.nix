@@ -36,6 +36,7 @@ with pkgs;
   gnome-solanum
 
   # university
+  libreoffice
   typst
   tinymist
 
