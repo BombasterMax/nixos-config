@@ -3,6 +3,7 @@
 {
   imports = [
     ./hw/hardware-configuration.nix
+    ./nix-ld.nix
   ];
   nixpkgs.config.allowUnfree = true;
   programs.command-not-found.enable = false;
@@ -128,5 +129,4 @@
   };
   # State nixOS release
   system.stateVersion = "25.05";
-
 }
