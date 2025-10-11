@@ -68,6 +68,7 @@ with pkgs;
   nix-output-monitor
 
   # perfomance
+  htop
   btop
   iotop
   iftop
