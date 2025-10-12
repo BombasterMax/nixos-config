@@ -80,7 +80,6 @@
       gcc
       openvpn
       dconf-editor
-      onlyoffice-desktopeditors
       nerd-fonts.fira-code
       # unfree shit
       obsidian
