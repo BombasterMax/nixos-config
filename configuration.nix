@@ -96,13 +96,16 @@
       defaultNetwork.settings.dns_enabled = true;
 
     };
+    libvirtd.enable = true;
+    spiceUSBRedirection.enable = true;
   };
+  programs.virt-manager.enable = true;
+  users.groups.libvirtd.members = [ "bombaster" ];
   environment.systemPackages = with pkgs; [
     dive
     podman-tui
     podman-compose
   ];
-
 
   services.flatpak.enable = true;
   systemd.services.flatpak-repo = {
