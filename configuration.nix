@@ -103,8 +103,6 @@
     podman-compose
   ];
 
-  virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "bombaster" ];
 
   services.flatpak.enable = true;
   systemd.services.flatpak-repo = {
