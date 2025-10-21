@@ -106,6 +106,7 @@ with pkgs;
   tcpdump
 
   ## rev
+  xxd
   (rizin.withPlugins (
     ps: with ps; [
       rz-ghidra
