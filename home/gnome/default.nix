@@ -27,7 +27,7 @@
   };
 
   # Default applications
-    xdg.mimeApps = {
+  xdg.mimeApps = {
     enable = true;
     defaultApplications = {
       "application/pdf" = "org.gnome.Papers.desktop";
@@ -77,7 +77,7 @@
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       binding = "<Super>Return";
       name = "Terminal";
-      command = "ptyxis --new-window";
+      command = "alacritty";
     };
 
     "org/gnome/settings-daemon/plugins/media-keys" = {

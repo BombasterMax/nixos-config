@@ -6,8 +6,8 @@ with pkgs;
   gnome-software
 
   # programms i use to operate my PC
+  alacritty
   ptyxis
-  zellij
   yazi
   zoxide
   ripgrep
