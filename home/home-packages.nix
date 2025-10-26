@@ -60,9 +60,12 @@ with pkgs;
   ipcalc
 
   # ricing
-  glow
+  # fastfetch imported in rice.nix
   nerdfetch
   cowsay
+  nitch
+  cpufetch
+  onefetch
 
   # nix stuff
   nix-output-monitor
