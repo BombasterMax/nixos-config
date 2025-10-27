@@ -54,6 +54,7 @@
     enable = true;
     settings = {
       theme = "gruvbox-dark";
+      scrollback_editor = "nvim";
     };
   };
 }
