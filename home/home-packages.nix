@@ -183,4 +183,6 @@ with pkgs;
   trivy
   clair
   grype
+  ## data analysis
+  nushell
 ]
