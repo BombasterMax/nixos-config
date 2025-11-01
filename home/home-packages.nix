@@ -8,6 +8,7 @@ with pkgs;
   # programms i use to operate my PC
   alacritty
   ptyxis
+  ghostty
   yazi
   zoxide
   ripgrep

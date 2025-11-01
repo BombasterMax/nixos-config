@@ -40,8 +40,8 @@
       general.import = [ "~/.config/alacritty/gruvbox_dark.toml" ];
       terminal.shell.program = "/bin/sh";
       terminal.shell.args = [
-        "-lc"
-        "zellij attach -c main"
+        "-c"
+        "fish"
       ];
       font.size = 14.0;
       font.normal.family = "FiraCode Nerd Font";
