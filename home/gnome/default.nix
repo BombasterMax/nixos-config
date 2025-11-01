@@ -77,7 +77,7 @@
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       binding = "<Super>Return";
       name = "Terminal";
-      command = "alacritty";
+      command = "ghostty";
     };
 
     "org/gnome/settings-daemon/plugins/media-keys" = {
