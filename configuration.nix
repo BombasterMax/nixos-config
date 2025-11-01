@@ -89,6 +89,12 @@
   };
   # Podman
   virtualisation.containers.enable = true;
+  virtualisation.docker.enable = true;
+  users.extraGroups.docker.members = [ "bombaster" ];
+  virtualisation.docker.rootless = {
+    enable = true;
+    setSocketVariable = true;
+  };
   virtualisation = {
     podman = {
       enable = true;
