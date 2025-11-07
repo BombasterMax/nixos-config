@@ -126,7 +126,6 @@ with pkgs;
   binwalk
   exiftool
   foremost
-  autopsy
   imhex
 
   ## crypto
