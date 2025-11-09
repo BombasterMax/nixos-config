@@ -13,6 +13,7 @@
       "lua"
       "basher"
       "typst"
+      "comment"
     ];
 
     userSettings = {
